@@ -137,3 +137,169 @@ div p {
 td {
 	margin: 0 20px 0 20px;
 }
+
+/* ============================================
+   CV PAGE STYLES
+   ============================================ */
+
+.cv-page {
+	padding-bottom: 30px;
+}
+
+.cv-title {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.cv-subtitle {
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	color: #555;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
+.cv-section {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #292929;
+	margin-bottom: 25px;
+}
+
+.cv-section-header {
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.2em;
+	background-color: #292929;
+	color: #00ff00;
+	padding: 8px 15px;
+	margin: 0;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+}
+
+.cv-section-header i {
+	color: #00ff00;
+	margin: 0 5px 0 0;
+}
+
+.cv-section-content {
+	padding: 15px 20px;
+}
+
+.cv-entry {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.cv-entry:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.cv-entry-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.cv-entry-title {
+	font-family: 'Concert One', cursive;
+	font-size: 1.1em;
+	margin: 0 0 5px 0;
+}
+
+.cv-entry-date {
+	font-family: 'Inconsolata', monospace;
+	font-size: 0.8em;
+	color: #555;
+	white-space: nowrap;
+}
+
+.cv-entry-org {
+	font-size: 0.85em;
+	color: #555;
+	margin-bottom: 8px;
+}
+
+.cv-entry-org i {
+	color: #555;
+	margin: 0 4px 0 0;
+	font-size: 0.9em;
+}
+
+.cv-entry-location {
+	margin-left: 15px;
+}
+
+.cv-entry-details {
+	font-size: 0.85em;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+
+.cv-entry-details li {
+	margin-bottom: 4px;
+}
+
+.cv-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.cv-list li {
+	padding: 5px 0;
+	font-size: 0.9em;
+}
+
+.cv-list li i {
+	color: #333;
+	margin: 0 8px 0 0;
+}
+
+.cv-lang {
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.cv-lang small {
+	color: #555;
+	font-family: 'Inconsolata', monospace;
+}
+
+/* ============================================
+   CV PAGE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 767px) {
+	.cv-title {
+		font-size: 2em;
+	}
+
+	.cv-entry-header {
+		flex-direction: column;
+	}
+
+	.cv-entry-date {
+		margin-bottom: 5px;
+	}
+
+	.cv-entry-location {
+		display: block;
+		margin-left: 0;
+		margin-top: 3px;
+	}
+
+	.cv-section-content {
+		padding: 10px 12px;
+	}
+
+	.cv-section-header {
+		font-size: 1em;
+		padding: 6px 10px;
+	}
+}
